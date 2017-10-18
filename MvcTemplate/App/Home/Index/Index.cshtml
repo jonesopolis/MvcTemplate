@@ -1,0 +1,24 @@
+﻿@model KnockOut.App.Home.Index.IndexViewModel
+
+
+<h1>@Model.Name</h1>
+
+<ul class="well" id="list">
+    @foreach (var word in Model.Words)
+    {
+        <li class="red">@word</li>
+    }
+    <br />
+
+
+
+    <button class="btn btn-lg btn-danger" onclick="indexVm.click()">HELP!</button>
+
+</ul>
+
+@section scripts
+    {
+    <script>
+        var indexVm = new app.IndexVm();
+    </script>
+}
