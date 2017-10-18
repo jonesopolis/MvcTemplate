@@ -1,4 +1,5 @@
-﻿var path = require('path');
+/// <binding BeforeBuild='Run - Development' />
+var path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
@@ -20,7 +21,7 @@ module.exports = {
                     use: [{
                         loader: "css-loader?sourceMap"
                     }, {
-                            loader: "less-loader?sourceMap"
+                        loader: "less-loader?sourceMap"
                     }]
                 })
             },
